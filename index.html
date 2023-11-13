@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucka - Enjoy your Day</title>
+    <!--Link to css-->
+<link rel="stylesheet" href="index.css" />
+<link rel="icon" href="data:image/png;base64,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">
+
+    <!--link to box icons-->
+ 
+        <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+        
+</head>
+<body>
+   <!--navbar-->
+   <header>
+    <a href="#" class="logo"> <img src="Images/logo.png" alt=""></a>
+<div class="bx bx-menu " id="menu-icon"></div>
+<ul class="navbar">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#shop">Shop</a></li>
+    <li><a href="#delivery">Delivery</a></li>
+    <li><a href="#app">App</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</header>
+<!--Section-->
+<section class="home" id="home">
+ <div class="home-text">
+    <span>Welcome To</span>
+    <h1>Starbucks Coffee</h1>
+    <h2>Free Cofee is <br>tap away</h2>
+    <a href="#" class="btn">Join Now</a>
+ </div>
+ <div class="home-img">
+    <img src="Images\home.png" alt="home">
+ </div>
+</section>
+<!--Shop-->
+<section class="shop" id="shop">
+      <div class="heading">
+        <span>Shop Now</span>
+        <h1>Shop Coffee</h1>
+      </div>
+      <div class="shop-container">
+        <div class="box">
+            <div class="box-img">
+                <img src="Images/shop1.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star-half' style='color:#e2c71d' ></i>
+            </div>
+            <h2>Starbucks Coffee</h2>
+            <span>$12.4</span>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="Images/shop2.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star-half' style='color:#e2c71d' ></i>
+            </div>
+            <h2>Starbucks Coffee</h2>
+            <span>$12.4</span>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+        <div class="box">
+            <div class="box-img">
+                <img src="Images/shop3.png" alt="">
+            </div>
+            <div class="stars">
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star' style='color:#e2c71d'  ></i>
+                <i class='bx bxs-star-half' style='color:#e2c71d' ></i>
+            </div>
+            <h2>Starbucks Coffee</h2>
+            <span>$12.4</span>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+      </div>
+</section>
+<!--Delivery-->
+<section class="delivery" id="delivery">
+    <div class="heading">
+        <span>Get Now</span>
+        <h1>Order With Uber Eats</h1>
+    </div>
+    <div class="container">
+        <div class="delivery-img">
+            <img src="Images/d2.jpg" alt="">
+        </div>
+        <div class="delivery-text">
+            <h2>Today deserver delivery</h2>
+            <p>Order Starbucks® delivery on DoorDash or Uber Eats and let your favorites come to you.</p>
+            <p>Tata Starbucks also offers online delivery through food delivery apps, and contactless ordering services via WhatsApp and QR code ordering in select stores across India.</p>
+            <a href="#" class="btn">Order Now</a>
+        </div>
+    </div>
+</section>
+<!--App-->
+<section class="app" id="app">
+    <div class="heading">
+        <span>Our App</span>
+        <h1>Download App</h1>
+    </div>
+    <div class="container">
+        <div class="app-text">
+            <h2>Fall into an easier routine</h2>
+            <p>Order Starbucks delivery on DoorDash or Uber Eats and let your favorites come to you.</p>
+            <p>Tata Starbucks also offers online delivery through food delivery apps, and contactless ordering services via WhatsApp and QR code ordering in select stores across India.</p>
+            <a href="https://apps.apple.com/us/app/starbucks/id331177714?_branch_match_id=1235508427052244474&utm_source=Web&utm_medium=marketing&_branch_referrer=H4sIAAAAAAAAA8soKSkottLXLy5JLEoqTc4u1kssKNDLyczL1vc0LM4r8Q%2B2rDIFAPH2J38lAAAA" class="btn">Download at the App Store</a>
+        </div>
+        <div class="app-img">
+            <img src="Images/app.png" alt="">
+        </div>
+    </div>
+</section>
+
+<!--About-->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="Images/about.jpg" alt="">
+    </div>
+    <div class="about-text">
+        <h2>50 years of  serving communities</h2>
+        <p>Global retailer of whole-bean and ground coffee, specialty coffee drinks, tea, and ready-to-eat sandwiches and baked goods.</p>
+        <p>Our aspiration is to be people positive – investing in humanity and the well-being of everyone we connect with, from our partners to coffee farmers to the customers in our stores and beyond.</p>
+        
+    </div>
+</section>
+<!--Contact-->
+<section class="contact" id="contact">
+    <div class="social">
+        <a href="https://www.facebook.com/Starbucks/">
+
+            <i class='bx bxl-facebook-circle'></i></a>
+            <a a href="https://www.instagram.com/starbucks/">
+                <i class='bx bxl-instagram'></i></a>
+                <a a href="https://www.youtube.com/starbucks">
+            <i class='bx bxl-youtube'></i></a>
+             
+        
+    </div>
+    <div class="links">
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of use</a>
+        <a href="#">Our Company</a>
+        
+    </div>
+    <p>&#169; Copy  All Right Reserved</p>
+</section>
+    <script src="index.js" ></script>
+    
+</body>
+</html>
